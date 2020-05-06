@@ -14,13 +14,13 @@ class WalletsController extends Controller
         return view('wallet')->with('llaves',$llaves);
     }
 
-    public function generarllaveWeb($palabras, $email, $plata)
+
+    public function generarllaveWeb($palabras, $email)
     {
         $walletNuevo = new Wallet();
 
         $walletNuevo->palabras = $palabras;
         $walletNuevo->email = $email;
-        $walletNuevo->plata = $plata;
         
         $fecha = Carbon::now();
 
@@ -30,8 +30,14 @@ class WalletsController extends Controller
         $walletNuevo->private_key = hash('sha256', $token);
         $walletNuevo->save();
 
-        return [$walletNuevo->private_key];
-
+        return response()->json(['operacion' => 'Registar Wallet Nuevo',
+                                'estado' => 'ok',
+                                'datos' => 
+                                    ['palabras' => $walletNuevo->palabras,
+                                        'direccionWallet' => $walletNuevo->private_key
+                                        ]
+                                ],
+                                200);
     }
 
     public function generarllave(Request $request)
@@ -40,7 +46,6 @@ class WalletsController extends Controller
 
         $walletNuevo->palabras = $request->input('palabras');
         $walletNuevo->email = $request->input('email');
-        $walletNuevo->plata = $request->input('plata');
         $fecha = Carbon::now();
 
         $token = $walletNuevo->palabras . $walletNuevo->email . $fecha;

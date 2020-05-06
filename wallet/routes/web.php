@@ -18,7 +18,7 @@ Route::get('/', 'WalletsController@index')->name('index');
 //metodo desde la vista html
 Route::post('/generarllave', 'WalletsController@generarllave');
 //metodo de llamada public desde url
-Route::get('generarllaveWeb/{palabras}/{email}/{plata}', [
+Route::get('generarllaveWeb/{palabras}/{email}', [
     'as' => 'generarllaveWeb', 'uses' => 'WalletsController@generarllaveWeb']);
 
 Route::post('/moverplata', 'WalletsController@moverplata');

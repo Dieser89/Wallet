@@ -15,6 +15,7 @@
                 <br>
                 {{Form::text('email')}}
                 <br>
+                
                 {{Form::submit('Generar')}}
             {{ Form::close() }}
 
