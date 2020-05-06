@@ -14,17 +14,9 @@ crear una tabla en la base llamada wallet en laravel en el archivo .env configur
 
 url para generar llave web (No repetir correo) http://localhost/wallet/public/generarllaveWeb/probandodesdelaweb/diego@web.com1
 
-composer install ----solo para la primera vez que entra al proyecto en un pc nuevo
-
-php artisan key:generate php artisan cache:clear
-
-crear una tabla en la base llamada wallet en laravel en el archivo.env configurar credenciales de la db y luego correr el siguiente comando php artisan migrate ----OJO desde el directorio raíz del proyecto (c:xampp/htdocs/wallet)
-
-url para generar llave web (No repetir correo) http://localhost/wallet/public/generarllaveWeb/probandodesdelaweb/Diego@web.com1
-
 El proyecto está realizado bajo el framework Laravel que está construido con Php, donde trae el modelo, vista y controlador, para dar un orden al código y de esta forma tener un mejor manejo por parte del usuario.
 
-Modelo EN el modelo realizaremos el backend Wallet.php
+Modelo: En el modelo realizaremos el backend Wallet.php
 
 // instancia las variables protected $fillable = [ 'id','palabras','email', 'private_key','plata','fecha', Vista Encontraremos las instancias para declarar las variables y de esta forma veremos el frontend del proyecto wallet.blade.php //Generamos el formulario donde se generan las 12 palabras para el wallet acompañado de un correo electrónico para indicar que va pertenecer a un usuario.
 
