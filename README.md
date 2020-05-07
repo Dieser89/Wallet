@@ -100,3 +100,8 @@ En el controlador generamos la llave y mandamos la indicación al coordinador pa
         return view('existe')->with('existe',false);//retorna si no es suyo
     }
 }   
+Direccion del servidor:
+http://142.44.246.66/Registro   
+http://142.44.246.66/Generarllave
+http://142.44.246.66/Verificar
+
