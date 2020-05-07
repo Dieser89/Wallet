@@ -101,7 +101,7 @@ En el controlador generamos la llave y mandamos la indicación al coordinador pa
     }
 }   
 Direccion del servidor:
-http://142.44.246.66/Registro   
-http://142.44.246.66/Generarllave
-http://142.44.246.66/Verificar
+http://142.44.246.66/Registro Registra los datos suministrados por el usuario.   
+http://142.44.246.66/Generarllave Genera la llave con los datos dado por el usuario.
+http://142.44.246.66/Verificar Verifica la informacion de la con el correo indicando si es correcto o no lo es.
 
