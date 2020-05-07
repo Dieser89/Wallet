@@ -1,8 +1,17 @@
  Grupo 2
  
+ 
 Bienvenidos a Wallet Laravel!
 
 Este proyecto contiene:
+
+Direccion del servidor:
+http://142.44.246.66 Registro: Registra los datos suministrados por el usuario.   
+http://142.44.246.66 Generarllave: Genera la llave con los datos dado por el usuario.
+http://142.44.246.66 Verificar: Verifica la informacion de la con el correo indicando si es correcto o no lo es.
+Direccion del Json quien envia los parametros al coordinador:
+http://142.44.246.66/generarllaveWeb/palabras/correo
+ 
 
 Generar una llave privada con las 12 palabras semilla, email y la hora Validacion de datos para que el coordinador revise la informacion de la wallet
 
@@ -100,10 +109,5 @@ En el controlador generamos la llave y mandamos la indicación al coordinador pa
         return view('existe')->with('existe',false);//retorna si no es suyo
     }
 }   
-Direccion del servidor:
-http://142.44.246.66 Registro: Registra los datos suministrados por el usuario.   
-http://142.44.246.66 Generarllave: Genera la llave con los datos dado por el usuario.
-http://142.44.246.66 Verificar: Verifica la informacion de la con el correo indicando si es correcto o no lo es.
-Direccion del Json quien envia los parametros al coordinador:
-http://142.44.246.66/generarllaveWeb/palabras/correo
+
 
