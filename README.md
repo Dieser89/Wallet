@@ -104,4 +104,6 @@ Direccion del servidor:
 http://142.44.246.66 Registro: Registra los datos suministrados por el usuario.   
 http://142.44.246.66 Generarllave: Genera la llave con los datos dado por el usuario.
 http://142.44.246.66 Verificar: Verifica la informacion de la con el correo indicando si es correcto o no lo es.
+Direccion del Json quien envia los parametros al coordinador:
+http://142.44.246.66/generarllaveWeb/palabras/correo
 
